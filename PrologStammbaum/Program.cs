@@ -8,9 +8,11 @@ class Program
     {
         // Prolog initialisieren
         var prolog = new PrologEngine(persistentCommandHistory: false);
+        var wissensdatenbank = Environment.CurrentDirectory + @"\stammbaum.pl";
 
         // Frage stellen und Antwort ausgeben
-        SolutionSet result = prolog.GetAllSolutions(@"C:\Prog\stammbaum.pl", query: "tochter(X,theodwyn).");
+        //SolutionSet result = prolog.GetAllSolutions(@"C:\Prog\stammbaum.pl", query: "tochter(X,theodwyn).");
+        SolutionSet result = prolog.GetAllSolutions(wissensdatenbank, query: "tochter(X,theodwyn).");
         Console.WriteLine("Frage: tochter(X,theodwyn).: ");
         Console.WriteLine(result.ToString());
 
