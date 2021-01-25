@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="EA12 Logische Programmierung.pdf" />
     <None Include="packages.config" />
     <None Include="stammbaum.pl">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
